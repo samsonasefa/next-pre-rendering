@@ -5,7 +5,9 @@ export default function NewsList({ articles }) {
       {articles.map((article) => {
         return (
           <div key={article.id}>
-            <h4>{article.title}</h4>
+            <h4>
+              {article.id} {article.title} | {article.category}
+            </h4>
           </div>
         );
       })}
